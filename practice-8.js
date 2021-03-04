@@ -39,6 +39,6 @@ function details(n){
 }
 var data = fetch('https://restcountries.eu/rest/v2/all').then(function(result){return result.json()}).then(function(res){details(res)});
 function weather(a,b){
-    var s = "http://api.openweathermap.org/data/2.5/weather?lat="+a+"&lon="+b+"&appid=e20da1eaa286ee1abfb8ed669935bdb8";
+    var s = "https://api.openweathermap.org/data/2.5/weather?lat="+a+"&lon="+b+"&appid=e20da1eaa286ee1abfb8ed669935bdb8";
     fetch(s).then(function(data){return data.json();}).then(function(res){alert("Weather : " +JSON.stringify(res.main));})
 }
