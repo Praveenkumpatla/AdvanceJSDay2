@@ -9,7 +9,7 @@ function details(n){
         grid.setAttribute("class","col-md-3 m-5");
         var data = document.createElement("div");
         data.setAttribute("class","card");
-        data.style.width = "100%";
+        data.style.backgroundImage = "linear-gradient(135deg,white,pink)";
         data.style.border = "4px solid black";
         data.style.borderRadius = "10px";
         var flag = document.createElement("img")
@@ -28,6 +28,7 @@ function details(n){
         pop.innerHTML = "Population : " + n[i].population ;
         var button = document.createElement("button");
         button.setAttribute("class","btn-danger");
+        button.style.borderRadius = "20px";
         var link = "weather("+n[i].latlng[0]+","+n[i].latlng[1]+")";
         button.setAttribute("onclick",link);
         button.innerHTML = "Weather" ;
